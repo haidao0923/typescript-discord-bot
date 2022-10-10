@@ -1,13 +1,12 @@
 import { Client } from "discord.js";
+const config = require('./config.json');
 
 console.log("Bot is starting...");
-
-token = "MTAyOTEyNTUxMjA2MjMxNjU5NA.GfWPS3.lkv_OXDs3Dv-H9ayQYQnOfm-0HnN9ok8_tvT8E";
 
 const client = new Client({
     intents: []
 });
 
-client.login(token);
+client.login(config.token);
 
 console.log(client);
